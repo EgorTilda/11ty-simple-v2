@@ -14,6 +14,55 @@
 $ npm i 
 ```
 
+## Обновление v2.0
+
+### Глобальный конфиг для сайта
+
+_data/site.json_
+```json
+{
+    "title": "11ty Simple",
+    "description": "11ty Simple - desc",
+    "lang": "en",
+    "alternate": "en-US",
+    "favicon": "svg",
+    "domain": "11ty-simple-example.com"
+}
+```
+
+**Поля:**
+
+	1. _title_ - название сайта, применится если у страницы .md во frontmatter не передан title
+ 
+	2. _description_ - мета-описание сайта, применится если у страницы .md во frontmatter не передан description
+ 
+	3. _lang_ - язык сайта, применяется если не передан во frontmatter
+ 
+	4. _alternate_ - используется для назначения языка при генерации link alternate
+ 
+	5. _faviсon_ - указывается расширение фавиконки (чтобы не изменять постоянно в шаблоне index.njk)
+ 
+	6. _domain_ - адрес домена для продакшен сборки (без https://) - используется для генерации sitemap.xml и robots.txt
+
+### Шаблоны для robots.txt, sitemap.xml
+
+Добавлены 2 шаблона robots.njk, sitemap.njk - для генерации robots.txt и sitemap.xml
+
+#### Как использовать sitemap?
+
+Используйте коллекцию **sitemap** в  **поле tags** для страницы .md, чтобы добавить ее при генерации в итоговую карту сайта:
+
+*index.md*
+```md
+---
+tags: sitemap
+sitemap:
+    priority: "0.8"
+---
+```
+Также можно указать **поле sitemap.priority** для доп. настройки - приоритета страницы, 
+	(рек.: указать в кавычках для избежания лишнего форматирования числа)
+
 ## Разработка
 
 ### Требования
@@ -157,55 +206,6 @@ export default function(eleventyConfig) {
     };
 };
 ```
-
-## Обновление v2.0
-
-### Глобальный конфиг для сайта
-
-_data/site.json_
-```json
-{
-    "title": "11ty Simple",
-    "description": "11ty Simple - desc",
-    "lang": "en",
-    "alternate": "en-US",
-    "favicon": "svg",
-    "domain": "11ty-simple-example.com"
-}
-```
-
-**Поля:**
-
-	1. _title_ - название сайта, применится если у страницы .md во frontmatter не передан title
- 
-	2. _description_ - мета-описание сайта, применится если у страницы .md во frontmatter не передан description
- 
-	3. _lang_ - язык сайта, применяется если не передан во frontmatter
- 
-	4. _alternate_ - используется для назначения языка при генерации link alternate
- 
-	5. _faviсon_ - указывается расширение фавиконки (чтобы не изменять постоянно в шаблоне index.njk)
- 
-	6. _domain_ - адрес домена для продакшен сборки (без https://) - используется для генерации sitemap.xml и robots.txt
-
-### Шаблоны для robots.txt, sitemap.xml
-
-Добавлены 2 шаблона robots.njk, sitemap.njk - для генерации robots.txt и sitemap.xml
-
-#### Как использовать sitemap?
-
-Используйте коллекцию **sitemap** в  **поле tags** для страницы .md, чтобы добавить ее при генерации в итоговую карту сайта:
-
-*index.md*
-```md
----
-tags: sitemap
-sitemap:
-    priority: "0.8"
----
-```
-Также можно указать **поле sitemap.priority** для доп. настройки - приоритета страницы, 
-	(рек.: указать в кавычках для избежания лишнего форматирования числа)
 
 ## **Запуск Development сервера**
 
