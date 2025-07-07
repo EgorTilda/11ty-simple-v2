@@ -1,0 +1,13 @@
+---
+permalink: /sitemap.xml
+---
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+    {% for page in collections.sitemap %}
+        <url>
+            <loc>https://{{ site.domain }}{{ page.url | url }}</loc>
+            <lastmod> {% sitemapDate %} </lastmod>
+            <priority>{{ page.data.sitemap.priority }}</priority>
+        </url>
+    {% endfor %}
+</urlset>

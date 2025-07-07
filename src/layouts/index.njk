@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="{{ lang or site.lang}}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title or site.title }}</title>
+    <link rel="alternate" href="https://{{ site.domain }}" hreflang="{{ site.lang }}">
+    <link rel="alternate" href="https://{{ site.domain }}/en-us/" hreflang="{{ site.alternate }}">
+    <link rel="canonical" href="https://{{ site.domain }}/en-us/">
+    <link rel="icon" type="image/svg" href="/favicon.{{site.favicon or "ico"}}">
+    <link rel="stylesheet" href="/theme/css/main.min.css">
+    <meta name="description" content="{{ description or site.description }}">
+</head>
+
+<body>
+    <div class="wrapper">
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar__inner" id="sidebar-inner">
+                <header class="sidebar__header"> <button class="btn-icon btn-icon--menu-sidebar" aria-label="Open menu" id="open-sidebar-btn"> <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="m-icon m-icon-loadable" name="HamburgerR" loading="false">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M5 7a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H6a1 1 0 0 1-1-1m-2 5a1 1 0 0 1 1-1h16a1 1 0 1 1 0 2H4a1 1 0 0 1-1-1m7 4a1 1 0 1 0 0 2h10a1 1 0 1 0 0-2z" fill="#d1d1d1"></path>
+                        </svg> </button> <a href="/" rel="nofollow" class="sidebar__logo logo">
+                        <picture>
+                            <source srcset="/theme/img/logo.svg" type="image/webp"><img src="/theme/img/logo.svg" alt="Corgibet" class="logo__img" width="150" height="26" loading="lazy">
+                        </picture>
+                    </a> </header>
+                <nav class="sidebar__nav-hide" id="sidebar-nav-hide"> <a href="go" rel="nofollow" class="sidebar__item-hide sidebar__item-hide--img" aria-label="sidebar icon">
+                        <picture>
+                            <source srcset="/theme/img/icon/missions.webp" type="image/webp"><img src="/theme/img/icon/missions.png" alt="Missions" class="sidebar__icon-hide" width="40" height="40">
+                        </picture>
+                    </a> <a href="go" rel="nofollow" class="sidebar__item-hide" aria-label="sidebar icon"> <svg class="icon-24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="m-icon m-icon-loadable" name="AllGames" loading="false">
+                            <path d="M11 17.443C11 19.96 8.985 22 6.5 22S2 19.96 2 17.443s2.015-4.557 4.5-4.557 4.5 2.04 4.5 4.557M22 15.418c0 2.517-2.015 4.557-4.5 4.557s-4.5-2.04-4.5-4.557 2.015-4.557 4.5-4.557S22 12.9 22 15.418" fill="currentColor"></path>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.483 3.222a.74.74 0 0 1 .623-.202c.919.133 1.684.65 2.297 1.3s1.113 1.473 1.51 2.314c.793 1.674 1.243 3.561 1.334 4.67l-1.495.126c-.075-.916-.475-2.624-1.191-4.14-.357-.754-.775-1.425-1.243-1.92a3.6 3.6 0 0 0-.531-.469c-.04 2.003-.598 3.986-1.326 5.659-.866 1.989-2.027 3.656-2.993 4.438l-.937-1.186c.702-.568 1.74-1.99 2.558-3.865.81-1.86 1.349-4.047 1.164-6.106a.77.77 0 0 1 .23-.62" fill="currentColor"></path>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M16.212 2.52a.76.76 0 0 1-.475.96L11.237 5a.75.75 0 0 1-.948-.481.76.76 0 0 1 .474-.96l4.5-1.52a.75.75 0 0 1 .949.48" fill="currentColor"></path>
+                        </svg> </a> <a href="go" rel="nofollow" class="sidebar__item-hide" aria-label="sidebar icon"> <svg class="icon-24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="m-icon m-icon-loadable" name="Live" loading="false">
+                            <path d="M6.343 4.938a1 1 0 0 1 0 1.415 8.003 8.003 0 0 0 0 11.317 1 1 0 1 1-1.415 1.414c-3.906-3.906-3.906-10.24 0-14.146a1 1 0 0 1 1.415 0m12.731 0c3.906 3.907 3.906 10.24 0 14.146a1 1 0 0 1-1.414-1.414 8.003 8.003 0 0 0 0-11.317 1 1 0 0 1 1.414-1.415M9.31 7.812a1 1 0 0 1 0 1.414 3.92 3.92 0 0 0 0 5.544 1 1 0 1 1-1.414 1.414 5.92 5.92 0 0 1 0-8.372 1 1 0 0 1 1.414 0m6.959 0a5.92 5.92 0 0 1 0 8.372 1 1 0 0 1-1.415-1.414 3.92 3.92 0 0 0 0-5.544 1 1 0 0 1 1.415-1.414m-4.187 2.77a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3" fill="currentColor"></path>
+                        </svg> </a> <a href="go" rel="nofollow" class="sidebar__item-hide" aria-label="sidebar icon"> <svg class="icon-24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="m-icon m-icon-loadable" name="SportSoccer" loading="false">
+                            <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2M8.244 4.373l3.008 1.8v2.193l-2.791 2.028-2.044-.707-.587-3.534a8.5 8.5 0 0 1 2.414-1.78m-4.623 9.066 2.327-2.327 2.04.705L9.07 15.15l-.97 1.575-3.293-.194a8.45 8.45 0 0 1-1.186-3.092m6.909 6.934-1.184-2.809.963-1.567h3.372l.912 1.581-1.04 2.78a8.6 8.6 0 0 1-3.023.015m8.362-3.397-3.024-.19-.938-1.624 1.087-3.345 2.013-.696 2.312 2.52a8.5 8.5 0 0 1-1.45 3.335m-.72-10.82-.589 3.533-2.04.705-2.791-2.028V6.172l3.002-1.8a8.5 8.5 0 0 1 2.418 1.784" fill="currentColor"></path>
+                        </svg> </a> <a href="go" rel="nofollow" class="sidebar__item-hide" aria-label="sidebar icon"> <svg class="icon-24" viewBox="0 0 24 24" fill="var(--accent-color)" xmlns="http://www.w3.org/2000/svg" class="m-icon m-icon-loadable" name="HeadsetOutline" loading="false">
+                            <path d="M12 18.75a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5m5.5-8.5v-1a5.5 5.5 0 1 0-11 0v1H9a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H6.5v.25a2.25 2.25 0 0 0 2.096 2.245l.154.005h1.128a2.251 2.251 0 1 1 0 1.5H8.75a3.75 3.75 0 0 1-3.745-3.55L5 16.5V9.25a7 7 0 0 1 14 0v5a2 2 0 0 1-1.85 1.994l-.15.006h-2a1 1 0 0 1-.993-.883L14 15.25v-4a1 1 0 0 1 .883-.993L15 10.25zm-9 1.5h-2v3h2zm9 0h-2v3H17a.5.5 0 0 0 .492-.41l.008-.09z" fill="var(--accent-color)"></path>
+                        </svg> </a> </nav>
+                <nav class="menu-nav" id="menu-nav">
+                    <div class="menu-nav__top"> <a href="go" rel="nofollow" class="menu-nav__grid-link menu-nav__grid-link--cta">
+                            <picture>
+                                <source srcset="/theme/img/icon/bonus.webp" type="image/webp"><img src="/theme/img/icon/bonus.png" alt="Promotions" class="menu-nav__icon" width="40" height="40" loading="lazy">
+                            </picture> <span class="menu-nav__text">Bonus Center</span>
+                        </a> <a href="go" rel="nofollow" class="menu-nav__grid-link menu-nav__grid-link--cta">
+                            <picture>
+                                <source srcset="/theme/img/icon/missions.webp" type="image/webp"><img src="/theme/img/icon/missions.png" alt="Promotions" class="menu-nav__icon" width="40" height="40" loading="lazy">
+                            </picture> <span class="menu-nav__text">Activity Center</span>
+                        </a>
+                        <div class="menu-nav__grid"> <a href="go" rel="nofollow" class="menu-nav__grid-link">
+                                <picture>
+                                    <source srcset="/theme/img/icon/loyalty.webp" type="image/webp"><img src="/theme/img/icon/loyalty.png" alt="Loyalty" class="menu-nav__icon" width="40" height="40" loading="lazy">
+                                </picture> <span class="menu-nav__text">Loyalty</span>
+                            </a> 
+                            <a href="go" rel="nofollow" class="menu-nav__grid-link">
+                                <picture>
+                                    <source srcset="/theme/img/icon/wheel.gif" type="image/webp"><img src="/theme/img/icon/wheel.gif" alt="Wheel" class="menu-nav__icon" width="40" height="40" loading="lazy">
+                                </picture> <span class="menu-nav__text">Wheel</span>
+                            </a> <a href="go" rel="nofollow" class="menu-nav__grid-link">
+                                <picture>
+                                    <source srcset="/theme/img/icon/vipclub.webp" type="image/webp"><img src="/theme/img/icon/vipclub.png" alt="VIP Club" class="menu-nav__icon" width="40" height="40" loading="lazy">
+                                </picture> <span class="menu-nav__text">VIP Club</span>
+                            </a> 
+                            <a href="go" rel="nofollow" class="menu-nav__grid-link">
+                                <picture>
+                                    <source srcset="/theme/img/icon/promotions.webp" type="image/webp"><img src="/theme/img/icon/promotions.png" alt="Promotions" class="menu-nav__icon" width="40" height="40" loading="lazy">
+                                </picture> <span class="menu-nav__text">Promotions</span>
+                            </a>
+                        </div>
+                        <div class="menu-nav__main"> <a href="go" rel="nofollow" class="menu-nav__main-link"> <svg class="icon-24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="m-icon m-icon-loadable" name="AllGames" loading="false">
+                                    <path d="M11 17.443C11 19.96 8.985 22 6.5 22S2 19.96 2 17.443s2.015-4.557 4.5-4.557 4.5 2.04 4.5 4.557M22 15.418c0 2.517-2.015 4.557-4.5 4.557s-4.5-2.04-4.5-4.557 2.015-4.557 4.5-4.557S22 12.9 22 15.418" fill="currentColor"></path>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.483 3.222a.74.74 0 0 1 .623-.202c.919.133 1.684.65 2.297 1.3s1.113 1.473 1.51 2.314c.793 1.674 1.243 3.561 1.334 4.67l-1.495.126c-.075-.916-.475-2.624-1.191-4.14-.357-.754-.775-1.425-1.243-1.92a3.6 3.6 0 0 0-.531-.469c-.04 2.003-.598 3.986-1.326 5.659-.866 1.989-2.027 3.656-2.993 4.438l-.937-1.186c.702-.568 1.74-1.99 2.558-3.865.81-1.86 1.349-4.047 1.164-6.106a.77.77 0 0 1 .23-.62" fill="currentColor"></path>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M16.212 2.52a.76.76 0 0 1-.475.96L11.237 5a.75.75 0 0 1-.948-.481.76.76 0 0 1 .474-.96l4.5-1.52a.75.75 0 0 1 .949.48" fill="currentColor"></path>
+                                </svg> <span class="menu-nav__text">Casino</span> </a> <a href="go" rel="nofollow" class="menu-nav__main-link"> <svg class="icon-24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="m-icon m-icon-loadable" name="Live" loading="false">
+                                    <path d="M6.343 4.938a1 1 0 0 1 0 1.415 8.003 8.003 0 0 0 0 11.317 1 1 0 1 1-1.415 1.414c-3.906-3.906-3.906-10.24 0-14.146a1 1 0 0 1 1.415 0m12.731 0c3.906 3.907 3.906 10.24 0 14.146a1 1 0 0 1-1.414-1.414 8.003 8.003 0 0 0 0-11.317 1 1 0 0 1 1.414-1.415M9.31 7.812a1 1 0 0 1 0 1.414 3.92 3.92 0 0 0 0 5.544 1 1 0 1 1-1.414 1.414 5.92 5.92 0 0 1 0-8.372 1 1 0 0 1 1.414 0m6.959 0a5.92 5.92 0 0 1 0 8.372 1 1 0 0 1-1.415-1.414 3.92 3.92 0 0 0 0-5.544 1 1 0 0 1 1.415-1.414m-4.187 2.77a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3" fill="currentColor"></path>
+                                </svg> <span class="menu-nav__text">Live Casino</span> </a> <a href="go" rel="nofollow" class="menu-nav__main-link"> <svg class="icon-24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="m-icon m-icon-loadable" name="SportSoccer" loading="false">
+                                    <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2M8.244 4.373l3.008 1.8v2.193l-2.791 2.028-2.044-.707-.587-3.534a8.5 8.5 0 0 1 2.414-1.78m-4.623 9.066 2.327-2.327 2.04.705L9.07 15.15l-.97 1.575-3.293-.194a8.45 8.45 0 0 1-1.186-3.092m6.909 6.934-1.184-2.809.963-1.567h3.372l.912 1.581-1.04 2.78a8.6 8.6 0 0 1-3.023.015m8.362-3.397-3.024-.19-.938-1.624 1.087-3.345 2.013-.696 2.312 2.52a8.5 8.5 0 0 1-1.45 3.335m-.72-10.82-.589 3.533-2.04.705-2.791-2.028V6.172l3.002-1.8a8.5 8.5 0 0 1 2.418 1.784" fill="currentColor"></path>
+                                </svg> <span class="menu-nav__text">Sports</span> </a> <a href="go" rel="nofollow" class="menu-nav__main-link"> <svg class="icon-24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="m-icon m-icon-loadable" name="Target" loading="false">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M4.08 7.958c-1.184 2.18-2.292 4.412-3.43 6.626a1.97 1.97 0 0 0-.114 1.545c.134.346.367.643.67.857a2.4 2.4 0 0 0 1.079.444 2.68 2.68 0 0 0 2.048-.56l3.923-2.922 8.282 2.22 1.906 4.482a2.68 2.68 0 0 0 1.493 1.51c.367.147.764.2 1.157.155.37-.036.724-.176 1.018-.404a2.02 2.02 0 0 0 .669-1.42c.146-2.49.279-4.973.336-7.466a5.83 5.83 0 0 0-.815-3.458 4.37 4.37 0 0 0-2.602-1.93 4.1 4.1 0 0 0-1.824-.066 4.4 4.4 0 0 0-1.675.66l-1.398-.374.375-1.398c.076-.267.252-.494.492-.633a1 1 0 0 1 .784-.112 1.93 1.93 0 0 0 1.483-.19c.434-.25.758-.655.903-1.135a.46.46 0 1 0-.88-.236 1.07 1.07 0 0 1-1.313.758 1.97 1.97 0 0 0-2.402 1.387l-.389 1.45-1.408-.378a4.4 4.4 0 0 0-1.12-1.41 4.1 4.1 0 0 0-1.613-.853 4.4 4.4 0 0 0-3.187.255A5.9 5.9 0 0 0 4.08 7.958m3.244 1.89L6.288 9.57a.536.536 0 0 1 .278-1.035l1.035.277.278-1.035a.514.514 0 0 1 .616-.356.525.525 0 0 1 .377.622L8.595 9.08l1.035.277a.536.536 0 0 1-.277 1.035l-1.035-.277-.278 1.035a.525.525 0 0 1-.638.351.514.514 0 0 1-.356-.617zm10.218 2.904a.675.675 0 1 1 .37-1.298.675.675 0 0 1-.37 1.298m2.165-.13a.675.675 0 1 1 1.3.37.675.675 0 0 1-1.3-.37m-1.195 1.81a.686.686 0 1 1 .355-1.324.686.686 0 0 1-.355 1.324m.206-3.418a.686.686 0 1 1 1.325.355.686.686 0 0 1-1.325-.355" fill="currentColor"></path>
+                                </svg> <span class="menu-nav__text">Esports</span> </a> </div>
+                    </div>
+                    <div class="menu-nav__sub"> <a href="go" rel="nofollow" class="btn btn--accent btn--m" style="margin-bottom: 1rem;"> <span style="color: #fff">Support</span> </a> </div>
+                </nav>
+            </div>
+        </aside>
+        <div class="page" id="page">
+            <header class="header" id="header">
+                <div class="header__inner container-full">
+                    <div class="header__main"> <button class="btn-icon btn-icon--menu-tablet" aria-label="Open menu" id="open-menu-btn"> <svg width="24" height="24" viewBox="0 0 24 24" fill="#d1d1d1" xmlns="http://www.w3.org/2000/svg" class="m-icon m-icon-loadable" name="HamburgerR" loading="false">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M5 7a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H6a1 1 0 0 1-1-1m-2 5a1 1 0 0 1 1-1h16a1 1 0 1 1 0 2H4a1 1 0 0 1-1-1m7 4a1 1 0 1 0 0 2h10a1 1 0 1 0 0-2z" fill="#d1d1d1"></path>
+                            </svg> </button> <a href="/" rel="nofollow" class="header__logo logo" id="header-logo">
+                            <picture>
+                                <source media="(max-width: 1024px)" srcset="/theme/img/logo-mobile.svg" width="47" height="24"> <img src="/theme/img/logo.svg" alt="Corgibet" class="logo__img" width="150" height="27">
+                            </picture>
+                        </a>
+                        <nav class="header__main-nav main-nav"> <a href="go" rel="nofollow" class="main-nav__link main-nav__link--active"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="m-icon m-icon-loadable" name="AllGames" loading="false">
+                                    <path d="M11 17.443C11 19.96 8.985 22 6.5 22S2 19.96 2 17.443s2.015-4.557 4.5-4.557 4.5 2.04 4.5 4.557M22 15.418c0 2.517-2.015 4.557-4.5 4.557s-4.5-2.04-4.5-4.557 2.015-4.557 4.5-4.557S22 12.9 22 15.418" fill="currentColor"></path>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.483 3.222a.74.74 0 0 1 .623-.202c.919.133 1.684.65 2.297 1.3s1.113 1.473 1.51 2.314c.793 1.674 1.243 3.561 1.334 4.67l-1.495.126c-.075-.916-.475-2.624-1.191-4.14-.357-.754-.775-1.425-1.243-1.92a3.6 3.6 0 0 0-.531-.469c-.04 2.003-.598 3.986-1.326 5.659-.866 1.989-2.027 3.656-2.993 4.438l-.937-1.186c.702-.568 1.74-1.99 2.558-3.865.81-1.86 1.349-4.047 1.164-6.106a.77.77 0 0 1 .23-.62" fill="currentColor"></path>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M16.212 2.52a.76.76 0 0 1-.475.96L11.237 5a.75.75 0 0 1-.948-.481.76.76 0 0 1 .474-.96l4.5-1.52a.75.75 0 0 1 .949.48" fill="currentColor"></path>
+                                </svg> <span class="main-nav__text-link">Casino</span> </a> <a href="go" rel="nofollow" class="main-nav__link"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="m-icon m-icon-loadable" name="SportSoccer" loading="false">
+                                    <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2M8.244 4.373l3.008 1.8v2.193l-2.791 2.028-2.044-.707-.587-3.534a8.5 8.5 0 0 1 2.414-1.78m-4.623 9.066 2.327-2.327 2.04.705L9.07 15.15l-.97 1.575-3.293-.194a8.45 8.45 0 0 1-1.186-3.092m6.909 6.934-1.184-2.809.963-1.567h3.372l.912 1.581-1.04 2.78a8.6 8.6 0 0 1-3.023.015m8.362-3.397-3.024-.19-.938-1.624 1.087-3.345 2.013-.696 2.312 2.52a8.5 8.5 0 0 1-1.45 3.335m-.72-10.82-.589 3.533-2.04.705-2.791-2.028V6.172l3.002-1.8a8.5 8.5 0 0 1 2.418 1.784" fill="currentColor"></path>
+                                </svg> <span class="main-nav__text-link">Sports</span> </a> </nav>
+                    </div>
+                    <div class="header__btn-group"> <a href="go" rel="nofollow" class="header__missions">
+                            <picture>
+                                <source srcset="/theme/img/icon/missions-btn.webp" type="image/webp"><img src="/theme/img/icon/missions-btn.png" alt="Promotions" class="header__missions-icon" width="24" height="24">
+                            </picture> <span>Activities</span>
+                        </a> <a href="go" rel="nofollow" class="header__btn-search btn-icon" aria-label="search"> <svg class="icon-24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="m-icon m-icon-loadable header-search-icon header__search-icon" name="Search" loading="false">
+                                <path d="M10.111 2a8.114 8.114 0 0 1 8.112 8.111c0 1.85-.617 3.558-1.666 4.921l5.127 5.126a1.077 1.077 0 0 1 0 1.525c-.39.39-1.006.422-1.428.087l-.097-.087-5.127-5.126a8.04 8.04 0 0 1-4.92 1.665A8.114 8.114 0 0 1 2 10.112 8.114 8.114 0 0 1 10.111 2m0 2.163a5.945 5.945 0 0 0-5.948 5.948 5.945 5.945 0 0 0 5.948 5.948 5.945 5.945 0 0 0 5.949-5.948 5.945 5.945 0 0 0-5.949-5.948" fill="var(--icon-color)"></path>
+                            </svg> </a> <a href="go" rel="nofollow" class="btn btn--s btn--outline"> <span class="btn__text">Sign in</span> </a> <a href="go" rel="nofollow" class="btn btn--s"> <span class="btn__text">Register</span> </a> </div>
+                </div>
+            </header>
+            <main class="main">
+                <section class="intro">
+                    <div class="intro__inner container-fluid">
+                        <picture>
+                            <source media="(max-width: 768px)" srcset="/theme/img/intro-mobile.webp"> <img class="intro__banner" src="/theme/img/intro-desktop.webp" alt="intro" width="1296" height="597">
+                        </picture>
+                        <div class="intro__content">
+                            <p class="intro__sub">Welcome package</p>
+                            <p class="intro__title"> 
+                                <span class="intro__sum">
+                                    UP TO €4,500 <br> + 350 FREE <br> SPINS
+                                </span> <br>       
+                                (+) get VIP status for free after your first deposit.                        
+                            </p> 
+                            <a href="go" rel="nofollow" class="intro__btn btn btn--cta" style="border-radius: 2.5rem;"> 
+                                <span class="btn__text">Get now</span> 
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                
+                <section class="top-games base-section">
+                    <div class="container-fluid">
+                        <div class="games">
+                            <div class="games__top">
+                                <div class="home-guest-top-games__header-line"></div>
+                                <p class="games__title">TOP GAMES</p>
+                                <div class="home-guest-top-games__header-line home-guest-top-games__header-line--right"></div>
+                            </div>
+                            <div class="games__row mobile-scroll">
+                                <div class="games__track">
+                                    <div class="game-card"> <a href="go" rel="nofollow" class="game-card__thumb">
+                                            <picture>
+                                                <source srcset="/theme/img/top/1.webp" type="image/webp"><img src="/theme/img/top/1.jpg" alt="All Lucky Clovers 100" class="game-card__img" width="300" height="300" loading="lazy">
+                                            </picture>
+                                        </a> <a href="go" rel="nofollow" class="game-card__content"> <span class="game-card__text">            <span class="game-card__title">All Lucky Clovers 100</span> <span class="game-card__desc">BGaming</span> </span> </a></div>
+                                    <div class="game-card"> <a href="go" rel="nofollow" class="game-card__thumb">
+                                            <picture>
+                                                <source srcset="/theme/img/top/2.webp" type="image/webp"><img src="/theme/img/top/2.png" alt="Chicken Road" class="game-card__img" width="300" height="300" loading="lazy">
+                                            </picture>
+                                        </a> <a href="go" rel="nofollow" class="game-card__content"> <span class="game-card__text">            <span class="game-card__title">Chicken Road</span> <span class="game-card__desc">Oryginalne od Corgibet</span> </span> </a></div>
+                                    <div class="game-card"> <a href="go" rel="nofollow" class="game-card__thumb">
+                                            <picture>
+                                                <source srcset="/theme/img/top/3.webp" type="image/webp"><img src="/theme/img/top/3.png" alt="Cash of Cleopatra" class="game-card__img" width="300" height="300" loading="lazy">
+                                            </picture>
+                                        </a> <a href="go" rel="nofollow" class="game-card__content"> <span class="game-card__text">            <span class="game-card__title">Cash of Cleopatra</span> <span class="game-card__desc">Jacks</span> </span> </a></div>
+                                    <div class="game-card"> <a href="go" rel="nofollow" class="game-card__thumb"> <img src="/theme/img/top/4.png" alt="Inferno Sevens" class="game-card__img" width="300" height="300" loading="lazy"> </a> <a href="go" rel="nofollow" class="game-card__content"> <span class="game-card__text">            <span class="game-card__title">Inferno Sevens</span> <span class="game-card__desc">Jacks</span> </span> </a></div>
+                                    <div class="game-card"> <a href="go" rel="nofollow" class="game-card__thumb">
+                                            <picture>
+                                                <source srcset="/theme/img/top/5.webp" type="image/webp"><img src="/theme/img/top/5.jpg" alt="Burning Chilli X" class="game-card__img" width="300" height="300" loading="lazy">
+                                            </picture>
+                                        </a> <a href="go" rel="nofollow" class="game-card__content"> <span class="game-card__text">            <span class="game-card__title">Burning Chilli X</span> <span class="game-card__desc">BGaming</span> </span> </a></div>
+                                    <div class="game-card"> <a href="go" rel="nofollow" class="game-card__thumb">
+                                            <picture>
+                                                <source srcset="/theme/img/top/6.webp" type="image/webp"><img src="/theme/img/top/6.jpg" alt="Lucky Fruit Wins 100" class="game-card__img" width="300" height="300" loading="lazy">
+                                            </picture>
+                                        </a> <a href="go" rel="nofollow" class="game-card__content"> <span class="game-card__text">            <span class="game-card__title">Lucky Fruit Wins 100</span> <span class="game-card__desc">1Spin4Win</span> </span> </a></div>
+                                    <div class="game-card"> <a href="go" rel="nofollow" class="game-card__thumb"> <img src="/theme/img/top/7.png" alt="Lightning Roulette" class="game-card__img" width="300" height="300" loading="lazy"> </a> <a href="go" rel="nofollow" class="game-card__content"> <span class="game-card__text">            <span class="game-card__title">Lightning Roulette</span> <span class="game-card__desc">Evolution</span> </span> </a></div>
+                                    <div class="game-card"> <a href="go" rel="nofollow" class="game-card__thumb">
+                                            <picture>
+                                                <source srcset="/theme/img/top/8.webp" type="image/webp"><img src="/theme/img/top/8.png" alt="Crazy Time" class="game-card__img" width="300" height="300" loading="lazy">
+                                            </picture>
+                                        </a> <a href="go" rel="nofollow" class="game-card__content"> <span class="game-card__text">            <span class="game-card__title">Crazy Time</span> <span class="game-card__desc">Evolution</span> </span> </a></div>
+                                    <div class="game-card"> <a href="go" rel="nofollow" class="game-card__thumb">
+                                            <picture>
+                                                <source srcset="/theme/img/top/9.webp" type="image/webp"><img src="/theme/img/top/9.jpg" alt="Crazy Balls" class="game-card__img" width="300" height="300" loading="lazy">
+                                            </picture>
+                                        </a> <a href="go" rel="nofollow" class="game-card__content"> <span class="game-card__text">            <span class="game-card__title">Crazy Balls</span> <span class="game-card__desc">Evolution</span> </span> </a></div>
+                                    <div class="game-card"> 
+                                        <a href="go" rel="nofollow" class="game-card__thumb">
+                                            <picture>
+                                                <source srcset="/theme/img/top/10.webp" type="image/webp"><img src="/theme/img/top/10.png" alt="Lightning Storm" class="game-card__img" width="300" height="300" loading="lazy">
+                                            </picture>
+                                        </a> 
+                                        <a href="go" rel="nofollow" class="game-card__content"> <span class="game-card__text">            <span class="game-card__title">Lightning Storm</span> <span class="game-card__desc">Evolution</span> </span> </a>
+                                    </div>
+                                    <div class="game-card"> 
+                                        <a href="go" rel="nofollow" class="game-card__thumb">
+                                            <picture>
+                                                <source srcset="/theme/img/top/11.webp" type="image/webp"><img src="/theme/img/top/11.jpg" alt="Bac Bo" class="game-card__img" width="300" height="300" loading="lazy">
+                                            </picture>
+                                        </a> 
+                                        <a href="go" rel="nofollow" class="game-card__content"> <span class="game-card__text">            <span class="game-card__title">Bac Bo</span> <span class="game-card__desc">Evolution</span> </span> </a>
+                                    </div>
+                                    <div class="game-card"> 
+                                        <a href="go" rel="nofollow" class="game-card__thumb">
+                                            <picture>
+                                                <source srcset="/theme/img/top/12.webp" type="image/webp"><img src="/theme/img/top/12.jpg" alt="XXXTreme Lightning Roullette" class="game-card__img" width="300" height="300" loading="lazy">
+                                            </picture>
+                                        </a> 
+                                        <a href="go" rel="nofollow" class="game-card__content"> <span class="game-card__text">            <span class="game-card__title">XXXTreme Lightning Roullette</span> <span class="game-card__desc">Evolution</span> </span> </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="main-content">
+                    <div class="main-content__inner container-fluid">
+                        {{ content | wrapTables | safe}}
+                    </div>
+                </section>
+            </main>
+            <footer class="footer">
+                <div class="container-fluid">
+                    <div class="footer__top"> <a href="/" rel="nofollow" class="footer__logo logo">
+                            <picture>
+                                <source srcset="/theme/img/logo.svg" type="image/webp"><img src="/theme/img/logo.svg" alt="Corgibet" class="logo__img" width="135" height="40">
+                            </picture>
+                        </a>
+                        <nav class="footer__nav">
+                            <div class="footer__nav-item"> <a href="go" rel="nofollow" class="footer__nav-link">Promotions</a> <a href="go" rel="nofollow" class="footer__nav-link">About us</a> <a href="go" rel="nofollow" class="footer__nav-link">About BTC</a> <a href="go" rel="nofollow" class="footer__nav-link">AML Policy</a> </div>
+                            <div class="footer__nav-item"> <a href="go" rel="nofollow" class="footer__nav-link">Bonus terms</a> <a href="go" rel="nofollow" class="footer__nav-link">Fairness and randomness evaluation methods</a> <a href="go" rel="nofollow" class="footer__nav-link">Dispute resolution</a> <a href="go" rel="nofollow" class="footer__nav-link">Self-exclusion</a> </div>
+                            <div class="footer__nav-item"> <a href="go" rel="nofollow" class="footer__nav-link">Risk warnings</a> <a href="go" rel="nofollow" class="footer__nav-link">Privacy Policy</a> <a href="go" rel="nofollow" class="footer__nav-link">Cookie Policy</a> <a href="go" rel="nofollow" class="footer__nav-link">FAQ</a> </div>
+                        </nav>
+                    </div>
+                    <div class="footer__bottom">
+                        <p class="footer__copyright">© corgibet.com 2025. All rights reserved.</p>
+                        <div class="footer__age">
+                            <picture>
+                                <source srcset="/theme/img/icon/age.svg" type="image/webp"><img src="/theme/img/icon/age.svg" alt="18+" class="footer__icon" width="24" height="24" loading="lazy">
+                            </picture>
+                            <picture>
+                                <source srcset="/theme/img/icon/ssl.svg" type="image/webp"><img src="/theme/img/icon/ssl.svg" alt="18+" class="footer__icon" width="51" height="23" loading="lazy">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <div class="mobile-menu" id="mobile-menu">
+                <div class="mobile-menu__inner">
+                    <header class="mobile-menu__header"> <button aria-label="Close menu" class="icon-24" id="close-menu-btn" class="mobile-menu__btn-close btn-icon btn-icon--close btn-icon--icon"><svg viewBox="0 0 24 24" fill="#fff" xmlns="http://www.w3.org/2000/svg" class="m-icon m-icon-loadable" name="Dismiss" loading="false">
+                                <path d="m4.21 4.387.083-.094a1 1 0 0 1 1.32-.083l.094.083L12 10.585l6.293-6.292a1 1 0 1 1 1.414 1.414L13.415 12l6.292 6.293a1 1 0 0 1 .083 1.32l-.083.094a1 1 0 0 1-1.32.083l-.094-.083L12 13.415l-6.293 6.292a1 1 0 0 1-1.414-1.414L10.585 12 4.293 5.707a1 1 0 0 1-.083-1.32l.083-.094z" fill="#fff"></path>
+                            </svg></button> <a href="/" rel="nofollow" class="mobile-menu__logo logo">
+                            <picture>
+                                <source media="(max-width: 1024px)" srcset="/theme/img/logo-mobile.svg"> <img src="/theme/img/logo.svg" alt="Corgibet" class="logo__img" width="61" height="45">
+                            </picture>
+                        </a> </header>
+                    <div class="mobile-menu__main">
+                        <nav class="menu-nav" id="menu-nav">
+                            <div class="menu-nav__top"> <a href="go" rel="nofollow" class="menu-nav__grid-link menu-nav__grid-link--cta">
+                                    <picture>
+                                        <source srcset="/theme/img/icon/bonus.webp" type="image/webp"><img src="/theme/img/icon/bonus.png" alt="Promotions" class="menu-nav__icon" width="40" height="40" loading="lazy">
+                                    </picture> <span class="menu-nav__text">Bonus Center</span>
+                                </a> <a href="go" rel="nofollow" class="menu-nav__grid-link menu-nav__grid-link--cta">
+                                    <picture>
+                                        <source srcset="/theme/img/icon/missions.webp" type="image/webp"><img src="/theme/img/icon/missions.png" alt="Promotions" class="menu-nav__icon" width="40" height="40" loading="lazy">
+                                    </picture> <span class="menu-nav__text">Activity Center</span>
+                                </a>
+                                <div class="menu-nav__grid"> <a href="go" rel="nofollow" class="menu-nav__grid-link">
+                                        <picture>
+                                            <source srcset="/theme/img/icon/loyalty.webp" type="image/webp"><img src="/theme/img/icon/loyalty.png" alt="Loyalty" class="menu-nav__icon" width="40" height="40" loading="lazy">
+                                        </picture> <span class="menu-nav__text">Loyalty</span>
+                                    </a> 
+                                    <a href="go" rel="nofollow" class="menu-nav__grid-link">
+                                        <picture>
+                                            <source srcset="/theme/img/icon/wheel.gif" type="image/webp"><img src="/theme/img/icon/wheel.gif" alt="Wheel" class="menu-nav__icon" width="40" height="40" loading="lazy">
+                                        </picture> <span class="menu-nav__text">Wheel</span>
+                                    </a> <a href="go" rel="nofollow" class="menu-nav__grid-link">
+                                        <picture>
+                                            <source srcset="/theme/img/icon/vipclub.webp" type="image/webp"><img src="/theme/img/icon/vipclub.png" alt="VIP Club" class="menu-nav__icon" width="40" height="40" loading="lazy">
+                                        </picture> <span class="menu-nav__text">VIP Club</span>
+                                    </a> 
+                                    <a href="go" rel="nofollow" class="menu-nav__grid-link">
+                                        <picture>
+                                            <source srcset="/theme/img/icon/promotions.webp" type="image/webp"><img src="/theme/img/icon/promotions.png" alt="Promotions" class="menu-nav__icon" width="40" height="40" loading="lazy">
+                                        </picture> <span class="menu-nav__text">Promotions</span>
+                                    </a>
+                                </div>
+                                <div class="menu-nav__main"> <a href="go" rel="nofollow" class="menu-nav__main-link"> <svg class="icon-24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="m-icon m-icon-loadable" name="AllGames" loading="false">
+                                            <path d="M11 17.443C11 19.96 8.985 22 6.5 22S2 19.96 2 17.443s2.015-4.557 4.5-4.557 4.5 2.04 4.5 4.557M22 15.418c0 2.517-2.015 4.557-4.5 4.557s-4.5-2.04-4.5-4.557 2.015-4.557 4.5-4.557S22 12.9 22 15.418" fill="currentColor"></path>
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.483 3.222a.74.74 0 0 1 .623-.202c.919.133 1.684.65 2.297 1.3s1.113 1.473 1.51 2.314c.793 1.674 1.243 3.561 1.334 4.67l-1.495.126c-.075-.916-.475-2.624-1.191-4.14-.357-.754-.775-1.425-1.243-1.92a3.6 3.6 0 0 0-.531-.469c-.04 2.003-.598 3.986-1.326 5.659-.866 1.989-2.027 3.656-2.993 4.438l-.937-1.186c.702-.568 1.74-1.99 2.558-3.865.81-1.86 1.349-4.047 1.164-6.106a.77.77 0 0 1 .23-.62" fill="currentColor"></path>
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M16.212 2.52a.76.76 0 0 1-.475.96L11.237 5a.75.75 0 0 1-.948-.481.76.76 0 0 1 .474-.96l4.5-1.52a.75.75 0 0 1 .949.48" fill="currentColor"></path>
+                                        </svg> <span class="menu-nav__text">Casino</span> </a> <a href="go" rel="nofollow" class="menu-nav__main-link"> <svg class="icon-24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="m-icon m-icon-loadable" name="Live" loading="false">
+                                            <path d="M6.343 4.938a1 1 0 0 1 0 1.415 8.003 8.003 0 0 0 0 11.317 1 1 0 1 1-1.415 1.414c-3.906-3.906-3.906-10.24 0-14.146a1 1 0 0 1 1.415 0m12.731 0c3.906 3.907 3.906 10.24 0 14.146a1 1 0 0 1-1.414-1.414 8.003 8.003 0 0 0 0-11.317 1 1 0 0 1 1.414-1.415M9.31 7.812a1 1 0 0 1 0 1.414 3.92 3.92 0 0 0 0 5.544 1 1 0 1 1-1.414 1.414 5.92 5.92 0 0 1 0-8.372 1 1 0 0 1 1.414 0m6.959 0a5.92 5.92 0 0 1 0 8.372 1 1 0 0 1-1.415-1.414 3.92 3.92 0 0 0 0-5.544 1 1 0 0 1 1.415-1.414m-4.187 2.77a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3" fill="currentColor"></path>
+                                        </svg> <span class="menu-nav__text">Live Casino</span> </a> <a href="go" rel="nofollow" class="menu-nav__main-link"> <svg class="icon-24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="m-icon m-icon-loadable" name="SportSoccer" loading="false">
+                                            <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2M8.244 4.373l3.008 1.8v2.193l-2.791 2.028-2.044-.707-.587-3.534a8.5 8.5 0 0 1 2.414-1.78m-4.623 9.066 2.327-2.327 2.04.705L9.07 15.15l-.97 1.575-3.293-.194a8.45 8.45 0 0 1-1.186-3.092m6.909 6.934-1.184-2.809.963-1.567h3.372l.912 1.581-1.04 2.78a8.6 8.6 0 0 1-3.023.015m8.362-3.397-3.024-.19-.938-1.624 1.087-3.345 2.013-.696 2.312 2.52a8.5 8.5 0 0 1-1.45 3.335m-.72-10.82-.589 3.533-2.04.705-2.791-2.028V6.172l3.002-1.8a8.5 8.5 0 0 1 2.418 1.784" fill="currentColor"></path>
+                                        </svg> <span class="menu-nav__text">Sports</span> </a> <a href="go" rel="nofollow" class="menu-nav__main-link"> <svg class="icon-24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="m-icon m-icon-loadable" name="Target" loading="false">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M4.08 7.958c-1.184 2.18-2.292 4.412-3.43 6.626a1.97 1.97 0 0 0-.114 1.545c.134.346.367.643.67.857a2.4 2.4 0 0 0 1.079.444 2.68 2.68 0 0 0 2.048-.56l3.923-2.922 8.282 2.22 1.906 4.482a2.68 2.68 0 0 0 1.493 1.51c.367.147.764.2 1.157.155.37-.036.724-.176 1.018-.404a2.02 2.02 0 0 0 .669-1.42c.146-2.49.279-4.973.336-7.466a5.83 5.83 0 0 0-.815-3.458 4.37 4.37 0 0 0-2.602-1.93 4.1 4.1 0 0 0-1.824-.066 4.4 4.4 0 0 0-1.675.66l-1.398-.374.375-1.398c.076-.267.252-.494.492-.633a1 1 0 0 1 .784-.112 1.93 1.93 0 0 0 1.483-.19c.434-.25.758-.655.903-1.135a.46.46 0 1 0-.88-.236 1.07 1.07 0 0 1-1.313.758 1.97 1.97 0 0 0-2.402 1.387l-.389 1.45-1.408-.378a4.4 4.4 0 0 0-1.12-1.41 4.1 4.1 0 0 0-1.613-.853 4.4 4.4 0 0 0-3.187.255A5.9 5.9 0 0 0 4.08 7.958m3.244 1.89L6.288 9.57a.536.536 0 0 1 .278-1.035l1.035.277.278-1.035a.514.514 0 0 1 .616-.356.525.525 0 0 1 .377.622L8.595 9.08l1.035.277a.536.536 0 0 1-.277 1.035l-1.035-.277-.278 1.035a.525.525 0 0 1-.638.351.514.514 0 0 1-.356-.617zm10.218 2.904a.675.675 0 1 1 .37-1.298.675.675 0 0 1-.37 1.298m2.165-.13a.675.675 0 1 1 1.3.37.675.675 0 0 1-1.3-.37m-1.195 1.81a.686.686 0 1 1 .355-1.324.686.686 0 0 1-.355 1.324m.206-3.418a.686.686 0 1 1 1.325.355.686.686 0 0 1-1.325-.355" fill="currentColor"></path>
+                                        </svg> <span class="menu-nav__text">Esports</span> </a> </div>
+                            </div>
+                            <div class="menu-nav__sub"> <a href="go" rel="nofollow" class="btn btn--accent btn--m" style="margin-bottom: 1rem;"> <span style="color: #fff">Support</span> </a> </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/theme/js/index.bundle.js"></script>
+</body>
+
+</html>
