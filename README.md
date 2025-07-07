@@ -192,11 +192,11 @@ _data/site.json_
 
 *index.md*
 ```md
-	---
-	tags: sitemap
-	sitemap:
-	    priority: "0.8"
-	---
+---
+tags: sitemap
+sitemap:
+    priority: "0.8"
+---
 ```
 Также можно указать **поле sitemap.priority** для доп. настройки - приоритета страницы, 
 	(рек.: указать в кавычках для избежания лишнего форматирования числа)
