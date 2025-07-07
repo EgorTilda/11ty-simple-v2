@@ -162,7 +162,7 @@ export default function(eleventyConfig) {
 
 ### Глобальный конфиг для сайта
 
-data/site.json
+_data/site.json_
 ```json
 {
     "title": "11ty Simple",
@@ -175,12 +175,12 @@ data/site.json
 ```
 
 **Поля:**
-	- title - название сайта, применится если у страницы .md во frontmatter не передан title
-	- description - мета-описание сайта, применится если у страницы .md во frontmatter не передан description
-	- lang - язык сайта, применяется если не передан во frontmatter
-	- alternate - используется для назначения языка при генерации link alternate
-	- faviсon - указывается расширение фавиконки (чтобы не изменять постоянно в шаблоне index.njk)
-	- domain - адрес домена для продакшен сборки (без https://) - используется для генерации sitemap.xml и robots.txt
+	- [ ] _title_ - название сайта, применится если у страницы .md во frontmatter не передан title
+	- [ ] _description_ - мета-описание сайта, применится если у страницы .md во frontmatter не передан description
+	- [ ] _lang_ - язык сайта, применяется если не передан во frontmatter
+	- [ ] _alternate_ - используется для назначения языка при генерации link alternate
+	- [ ] _faviсon_ - указывается расширение фавиконки (чтобы не изменять постоянно в шаблоне index.njk)
+	- [ ] _domain_ - адрес домена для продакшен сборки (без https://) - используется для генерации sitemap.xml и robots.txt
 
 ### Шаблоны для robots.txt, sitemap.xml
 
