@@ -158,6 +158,49 @@ export default function(eleventyConfig) {
 };
 ```
 
+## Обновление v2.0
+
+### Глобальный конфиг для сайта
+
+data/site.json
+```json
+{
+    "title": "11ty Simple",
+    "description": "11ty Simple - desc",
+    "lang": "en",
+    "alternate": "en-US",
+    "favicon": "svg",
+    "domain": "11ty-simple-example.com"
+}
+```
+
+**Поля:**
+	- title - название сайта, применится если у страницы .md во frontmatter не передан title
+	- description - мета-описание сайта, применится если у страницы .md во frontmatter не передан description
+	- lang - язык сайта, применяется если не передан во frontmatter
+	- alternate - используется для назначения языка при генерации link alternate
+	- faviсon - указывается расширение фавиконки (чтобы не изменять постоянно в шаблоне index.njk)
+	- domain - адрес домена для продакшен сборки (без https://) - используется для генерации sitemap.xml и robots.txt
+
+### Шаблоны для robots.txt, sitemap.xml
+
+Добавлены 2 шаблона robots.njk, sitemap.njk - для генерации robots.txt и sitemap.xml
+
+#### Как использовать sitemap?
+
+Используйте коллекцию **sitemap** в  **поле tags** для страницы .md, чтобы добавить ее при генерации в итогую карту сайта:
+
+*index.md*
+```md
+	---
+	tags: sitemap
+	sitemap:
+	    priority: "0.8"
+	---
+```
+Также можно указать **поле sitemap.priority** для доп. настройки - приоритета страницы, 
+	(рек.: указать в кавычках для избежания лишнего форматирования числа)
+
 ## **Запуск Development сервера**
 
 Для запуска live-сервера можно использовать следующую команду
